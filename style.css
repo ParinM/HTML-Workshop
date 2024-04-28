@@ -1,3 +1,17 @@
+
+
+nav{
+    height: 50px;
+    background-color: #532a12;
+    justify-content: space-between;
+
+}
+
+.content{
+    text-align: center;
+    margin: 10px;
+}
+
 body{    
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
@@ -16,7 +30,7 @@ p{
     border-right-style: solid;
     border-bottom-style: dashed;
     border-left-style: none;
-    */
+    */    
     border-style: dotted solid dashed none ; /*สามารถกำหนดแต่กรอบแต่ละฝั่งได้ เรียงตามลำดับ*/
     border-radius: 10px;
     border: 5px dotted #02b7ff;
