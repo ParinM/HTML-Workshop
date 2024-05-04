@@ -4,62 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <div class="navbar">
-
         </div>
     </nav>
 
-    <div class="content">
-    <img src="images/Test.jpg" alt="" width="200">
-    <div class="head1">
-        <h1>
-            <span class="material-symbols-outlined">sunny</span>                
-            Hello World
-            <span class="material-symbols-outlined">sunny</span>
-        </h1>
+    <div class="header">
+        <img src="images/Test.jpg" alt="" width="200">
+        <div class="hellow">
+            <h1>
+                <span class="material-symbols-outlined">sunny</span>                
+                Hello World
+                <span class="material-symbols-outlined">sunny</span>
+            </h1>
+        </div>
     </div>
-    
-    <p>
-        My name is: <span class="name">Parin Mahudkomol</span>
-    </p>
-    
-    <hr width="300" color="darkblue"/>
-    
-    <p>
-    <span class="head2">Hello There! 🌙</span>    
-        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        <br/> Dignissimos, sunt obcaecati sed, porro, possimus 
-        <br/>distinctio nostrum vero blanditiis delectus enim 
-        <br/>adipisci qui veritatis minima similique incidunt fugiat quidem eos quod.    
-    </p>        
+    <div class="myname">        
+        <div class="myname-text">
+            <p>
+                My name is: <span class="name">Parin Mahudkomol</span>
+                <br>
+                <button onclick="clickMe()">Click Me</button>        
+            </p>
+        </div>
     </div>
+
+    <div class="hellot">
+        <div class="hellot-text">
+            <p><span class="head2">Hello There! 🌙</span>    
+                <br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                 Dignissimos, sunt obcaecati sed, porro, possimus 
+                distinctio nostrum vero blanditiis delectus enim 
+                adipisci qui veritatis minima similique incidunt fugiat quidem eos quod.    
+            </p>
+        </div>
+    </div>        
    
     <div class="skill">
-     <h2><b>My Skill</b></h2>
-        <ol>
-            <li> Hard Skill</li>
-                <ol type="a">
-                    <li>Hard Skill 01</li>
-                    <li>Hard Skill 02</li>
-                    <li>Hard Skill 03</li>
+        <div class="skill-wrapper">            
+            <div class="skill-main">
+                <div class="skill-text">
+                    <h2>My Skill</h2>
+                <ol>
+                    <li> Hard Skill</li>
+                        <ol type="a">
+                            <li>Hard Skill 01</li>
+                            <li>Hard Skill 02</li>
+                            <li>Hard Skill 03</li>
+                        </ol>
+                    <li> Soft Skill</li>
+                        <ul type="square">
+                            <li>Soft Skill 01</li>
+                            <li>Soft Skill 02</li>
+                            <li>Soft Skill 03</li>
+                    </ul>
                 </ol>
-            <li> Soft Skill</li>
-                <ul type="square">
-                    <li>Soft Skill 01</li>
-                    <li>Soft Skill 02</li>
-                    <li>Soft Skill 03</li>
-                </ul>
-        </ol>
-        <a href="contact.html">Contact me!</a>
+                </div> 
+                <div class="skill-image">
+                    <img src="images/rainbow.png" alt="" size>
+                </div>
+            </div>
+            <div class="skill-button">
+                <a href="contact.html">Contact me!</a>
+            </div>       
+            
+        </div>
     </div>
+    
     <div class="moon">
         <img src="images/moon_fixed.png" alt="" width="100px">
     </div>
+        
 
+    <script>
+        function clickMe(){
+            alert("Hello! My name is Parin!");
+        }
+    </script>
 </body>
 </html>

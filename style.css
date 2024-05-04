@@ -1,108 +1,168 @@
 
-
 nav{
     height: 50px;
     background-color: #532a12;
-    justify-content: space-between;
 
+    &.navbar {
+        height: 50px;
+        margin-top: 0px;
+        justify-content: space-between;
+    }
 }
 
-.content{
-    text-align: center;
-    margin: 10px;
-}
-
-body{    
+body {    
     font-family: "Sarabun", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-image: url(images/rabbit_bg05.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
     /*shorhand css เขียนย่อได้ แต่บางคำสั่งใช้ร่วมกันไม่ได้(ไม่แสดงผล) */
     /* background: url(images/rabbit_bg05.jpg) no-repeat;  */
 }
 
-p{
-    /*
+.header {
+    text-align: center;
+    margin: 15px;
+    color: darkblue;
+    
+}
+    
+.myname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    & .myname-text {        
+        margin: 15px;
+        text-align: center;
+        width: 1000px;
+        border-radius: 20px;
+        background-color: #ffca8586;
+        border-style:groove;
+        box-shadow: 3px 4px #ffdcc8;        
+    }    
+}
+
+.hellot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;       
+    
+    & .hellot-text {
+        margin: 15px;
+        text-align: center;
+        width: 1000px;
+        border-radius: 20px;
+        background-color: #ffca8586;
+        border-style:groove;
+        box-shadow: 3px 4px #ffdcc8;
+    }
+}
+
+.skill {
+    display: flex;
+    justify-content: center;    
+
+    & .skill-wrapper {
+        color: #572f09;
+        background-color: #3bceffce;
+        width: 300px;
+        border-radius: 10px;
+        padding: 15px;
+        margin: 15px;
+
+        & .skill-main {
+            display: flex;            
+            justify-content: space-between;
+
+            & .skill-image {
+    
+                & img {
+                    width: 75px;
+                    text-align: right;
+                }
+            }
+        }
+               
+        & .skill-button {
+            text-align: center;        
+        
+            & a:link, a:visited {
+                background-color: #f44336;
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+            }
+
+            & a:hover{
+                background-color: red;
+            }
+        }
+    }
+}
+
+/* 
+p {
+    
     border-width: 5px;
     border-top-style: dotted;
     border-right-style: solid;
     border-bottom-style: dashed;
     border-left-style: none;
-    */    
-    border-style: dotted solid dashed none ; /*สามารถกำหนดแต่กรอบแต่ละฝั่งได้ เรียงตามลำดับ*/
-    border-radius: 10px;
+    border-style: dotted solid dashed none ; สามารถกำหนดแต่กรอบแต่ละฝั่งได้ เรียงตามลำดับ 
     border: 5px dotted #02b7ff;
-    padding: 20px;
+    border-radius: 10px; 
     /* padding นับระยะห่างระหว่างข้มความภายในกับกรอบที่ล้อมรอบมัน
-    padding: 200px 30px; ถ้าใส่ 2 ค่า คือแกน x กับ y
-    */
-    width: 75%;
-    max-width: 500px;
-    text-indent: 30px; /*เพิ่มระยะย่อหน้า*/
-    line-height: 20px; /*ระยะห่างระหว่างบรรทัด*/
-    letter-spacing: 1px; /*ระยะห่างระหว่างตัวอักษร ใส่ค่าติดลบได้ จะทำให้ตัวหนังสือชิดขึ้น*/
-    word-spacing: 5px; /*ระยะห่างระหว่างคำ*/
-    direction: ltr; /*เรียงจากซ้ายไปขวา/ขวาไปซ้าย*/
-}
+    padding: 200px 30px; ถ้าใส่ 2 ค่า คือแกน x กับ y*/
+    
+    /* text-indent: 30px; /*เพิ่มระยะย่อหน้า*/
+    /* line-height: 20px; /*ระยะห่างระหว่างบรรทัด*/
+    /* letter-spacing: 1px; /*ระยะห่างระหว่างตัวอักษร ใส่ค่าติดลบได้ จะทำให้ตัวหนังสือชิดขึ้น*/
+    /* word-spacing: 5px; /*ระยะห่างระหว่างคำ*/
+    /* direction: ltr; /*เรียงจากซ้ายไปขวา/ขวาไปซ้าย*/
+    /* padding: 20px;  */
+} 
 
-a{
+a {
     text-decoration: none;    
 }
 
-.head1{
+.head1 {
     color: #00008b;
     text-transform: uppercase; /*ทำให้เป็นตัวพิมพ์ใหญ่*/    
 }
 
-.name{
+.name {
     font-weight: bold;
 }    
 
-.head2{
+.head2 {
     color: #dc143c;
     font-size: 40px;
     text-shadow: 3px 2px 3px #ffd700;
     /*text shadow ต้องใส่ทั้งแกน x และ y ถ้าใส่ค่าติดลบมันจะย้อนทาง ส่วนค่าที่3จะทำให้เงาเบลอขึ้น*/}
 
-.skill{
-    color: #572f09;
-    background-color: #3bceffce;
-    max-width: 200px;
-    border-radius: 10px;
-    padding: 15px;    
-}
-
-a:link, a:visited {
-    background-color: #f44336;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-a:hover{
-    background-color: red;
-}
-
 table{
     border-style: 3px solid black;
     border-collapse: collapse;
-    width: 100%;
-}
+    width: 30%;
 
-tr, td{
-    padding: 5px;
-}
-
-th{
-    background-color: aquamarine;
-}
-
-tr:hover{
-    background-color: lightgray;
+    & th{
+        background-color: aquamarine;
+    }
+   
+    &tr, td{
+        padding: 5px;
+    }
+    
+    ฿ tr:hover{
+        background-color: lightgray;
+    }
 }
 
 .moon{
